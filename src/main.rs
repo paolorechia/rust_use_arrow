@@ -1,7 +1,7 @@
 use std::fs::File;
-use polars::prelude::*;
 use onnxruntime::environment::Environment;
-use onnxruntime::{LoggingLevel, GraphOptimizationLevel};
+use onnxruntime::LoggingLevel;
+// use polars::prelude::*;
 
 
 fn main() {
@@ -15,4 +15,6 @@ fn main() {
         .new_session_builder().unwrap()
         .with_number_threads(1).unwrap()
         .with_model_from_file("data/linear.onnx").unwrap();
+
+    println!("Model loaded!");
 }

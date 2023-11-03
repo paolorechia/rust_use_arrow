@@ -1323,9 +1323,9 @@ checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
 
 [[package]]
 name = "onnxruntime"
-version = "0.0.14"
+version = "0.0.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3f420aa8537acfc1d1849ba3c52f5e7dcb7e4a42ef3c3909fea39b2166c0a08d"
+checksum = "30291d58bfbfae5ba806f49acc029d1fd536e334cf891bca49806fe91bde70c4"
 dependencies = [
  "lazy_static",
  "ndarray",
@@ -1336,9 +1336,9 @@ dependencies = [
 
 [[package]]
 name = "onnxruntime-sys"
-version = "0.0.14"
+version = "0.0.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d260f550734525e3673282be19c33f2e8cd4c75c28e6118b5ba46ba76d909899"
+checksum = "0f937cef932c8dd837d51862d397109e2aa9aa179818e1d8a7af7e37b703d8c9"
 dependencies = [
  "flate2",
  "tar",

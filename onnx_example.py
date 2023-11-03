@@ -10,9 +10,9 @@ reg.coef_
 # Convert into ONNX format.
 from skl2onnx import to_onnx
 
-onx = to_onnx(reg, X[:1])
-# with open("linear.onnx", "wb") as f:
-#     f.write(onx.SerializeToString())
+onx = to_onnx(reg, X[:1].astype(np.float32))
+with open("linear.onnx", "wb") as f:
+    f.write(onx.SerializeToString())
 
 print(onx)
 
