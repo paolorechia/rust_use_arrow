@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 arrow = "48.0.0"
+onnxruntime = "0.0.14"
 parquet = {version = "48.0.0", features = ["async"]}
 polars = {version = "0.34.2", features = ["parquet", "lazy", "dtype-array"]}
 tokio = {version = "1.33.0", features = ["full"]}
